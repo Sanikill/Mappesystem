@@ -1,4 +1,4 @@
-void clickbox (int x, int y, int breadth, int tallness, float change) {
+void clickbox_display (int x, int y, int breadth, int tallness) {
   rect(x,y,breadth,tallness);
 }// Display the clickbox function
 
