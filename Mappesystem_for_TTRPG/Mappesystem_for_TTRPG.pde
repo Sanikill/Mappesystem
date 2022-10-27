@@ -1,6 +1,6 @@
 //INITIALIZE
 
-
+String tool = "EMPTY";
 
 void setup() {// SETUP
  size(1920,1080); 
