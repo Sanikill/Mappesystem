@@ -9,5 +9,3 @@ void setup() {// SETUP
 void draw() {// LOOP
   
 }
-
-void loop()
