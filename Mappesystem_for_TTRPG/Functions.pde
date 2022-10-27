@@ -2,7 +2,7 @@ void clickbox_display (int x, int y, int breadth, int tallness) {
   rect(x,y,breadth,tallness);
 }// Display the clickbox function
 
-void clickbox (int x, int y, int breadth, int tallness, float change) {
+void clickbox (int x, int y, int breadth, int tallness, String change) {
   if (mouseY >= y) {
     if (mouseX >= x) {
       if (mouseY <= y+tallness) {
