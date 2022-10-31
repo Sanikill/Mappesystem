@@ -1,3 +1,7 @@
+int punkt1 = 0;
+int punkt2 = 0;
+int punkt3 = 0;
+int punkt4 = 0;
 void mouseReleased() {
   if (chooseCharacterSymbol) {
     //BUTTONNNNSSSS
@@ -47,7 +51,25 @@ void mouseReleased() {
      
    }
    if (tool == "ROOM") {
-     
+      if (punkt1 > 0) {
+    punkt3 = mouseX;
+  }
+  if (punkt2 > 0) {
+    punkt4 = mouseY;
+
+    rect(punkt1, punkt2, punkt3, punkt4);
+  
+  }
+  punkt1 = mouseX;
+  punkt2 = mouseY;
+  
+  if (punkt4 > 0) {
+
+    punkt1 = 0;
+    punkt2 = 0;
+    punkt3 = 0;
+    punkt4 = 0;
+  }
    }
    if (tool == "DOOR") {
      
