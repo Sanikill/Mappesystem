@@ -10,6 +10,7 @@ boolean chooseCharacterSymbol = false;
 
 void setup() {// SETUP
  size(1920,1080); 
+ rectMode(CORNERS);
 }
 
 void draw() {// LOOP
