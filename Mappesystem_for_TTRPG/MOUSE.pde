@@ -11,10 +11,11 @@ void mouseReleased() {
     clickboxCharacter(10, 10+60*7, 50, 50, 8);
     clickboxCharacter(10, 10+60*8, 50, 50, 9);
     clickboxCharacter(10, 10+60*9, 50, 50, 10);
-    Character(temp1,temp2,temp3)
+    CharaList.add(new Character(temp1,temp2,temp3));
     temp1 = 0;
     temp2 = 0;
     temp3 = 0;
+    chooseCharacterSymbol = false;
   } else if (mouseX < 70) {
     clickbox(10, 10+60*0, 50, 50, "DRAG");
     clickbox(10, 10+60*1, 50, 50, "CHARACTER");
