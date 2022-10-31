@@ -31,8 +31,6 @@ void draw() {// LOOP
     clickbox_display(10, 10+60*6, 50, 50);
   } else {
 
-
-
     fill(#000000);
     clickbox_display(10, 10+60*0, 50, 50);// Do we want a symbol, or text, or anything for these?
     clickbox_display(10, 10+60*1, 50, 50);
