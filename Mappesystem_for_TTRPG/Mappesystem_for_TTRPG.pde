@@ -42,20 +42,24 @@ void draw() {// LOOP
     //clickbox_display(10, 10+60*7, 50, 50);
     clickbox_display(10, 10+60*5, 50, 50);
     clickbox_display(10, 10+60*6, 50, 50);
-    
+
     drawAll();
-    
-    
+
+
     if (tool == "DRAG") {
       line(width/2, height/2, mouseX, mouseY);
     }
     if (charge > 0) {
       fill(#000000, 10);
-      rect(0,0,10000,10000);
+      rect(0, 0, 10000, 10000);
       Chara[charge].posx = mouseX-adjustX;
       Chara[charge].posy = mouseY-adjustY;
       fill(#FF0505);
       ellipse(Chara[charge].posx+adjustX, Chara[charge].posy+adjustY, 20, 20);
     }
+    
+      
+      
+    
   }
 }
