@@ -22,7 +22,7 @@ void mouseReleased() {
     clickboxCharact(10, 10+60*7, 50, 50, 8);
     clickboxCharact(10, 10+60*8, 50, 50, 9);
     clickboxCharact(10, 10+60*9, 50, 50, 10);
-    Chara[yaydeath+1] = new Charact(temp1,temp2,temp3);
+    Chara[yaydeath] = new Charact(temp1,temp2,temp3);
     yaydeath++;
     temp1 = 0;
     temp2 = 0;
