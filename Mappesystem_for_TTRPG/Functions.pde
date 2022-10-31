@@ -37,13 +37,13 @@ void drawAll() {
 
   fill(#FFFFFF, 0);
   for (int i = 0; i < yayroom; i++) {
-    rect(house[i].Room1, house[i].Room2, house[i].Room3, house[i].Room4);
+    rect(house[i].Room1+adjustX, house[i].Room2+adjustY, house[i].Room3+adjustX, house[i].Room4+adjustY);
   }
 
   fill(#FFA500, 125);
   noStroke();
   for (int i = 0; i < yayfire; i++) {
-    ellipse(ildebrand[i].ildx, ildebrand[i].ildy, 75, 75);
+    ellipse(ildebrand[i].ildx+adjustX, ildebrand[i].ildy+adjustY, 75, 75);
   }
   stroke(#000000);
 }
