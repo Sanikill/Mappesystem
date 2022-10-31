@@ -15,7 +15,8 @@ void mouseReleased() {
     clickboxCharacter(10, 10+60*7, 50, 50, 8);
     clickboxCharacter(10, 10+60*8, 50, 50, 9);
     clickboxCharacter(10, 10+60*9, 50, 50, 10);
-    CharaList.add(new Character(temp1,temp2,temp3));
+    Chara[plsnosteal] = new Character(temp1,temp2,temp3);
+    plsnosteal++;
     temp1 = 0;
     temp2 = 0;
     temp3 = 0;
