@@ -3,6 +3,10 @@
 String tool = "EMPTY";
 int adjustX = 0;
 int adjustY = 0;
+int temp1 = 0;
+int temp2 = 0;
+int temp3 = 0;
+boolean chooseCharacterSymbol = false;
 
 void setup() {// SETUP
  size(1920,1080); 
