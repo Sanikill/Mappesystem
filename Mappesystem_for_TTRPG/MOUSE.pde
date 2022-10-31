@@ -4,7 +4,6 @@ ild[] ildebrand = new ild[100];
 int yaydeath = 0;
 int yayroom = 0;
 int yayfire = 0;
-int yaydoor = 0;
 int charge = -1;
 int punkt1 = 0;
 int punkt2 = 0;
@@ -88,7 +87,7 @@ void mouseReleased() {
         punkt4 = 0;
       }
     }
-    if (tool == "DOOR") { 
+    if (tool == "DOOR") { //Anton
      if (punkt1 > 0) {
      punkt3 = mouseX;
      }
@@ -109,16 +108,26 @@ void mouseReleased() {
      punkt4 = 0;
      }
      }
-    
+     
     if (tool == "FIRE") {
 
       ildebrand[yayfire] = new ild();
       yayfire++;
     }
-    /*
-   if (tool == "DELETE") { Gustav
-     
-     }*/
+
+    if (tool == "DELETE") {
+
+      for (int s = 0; s < yayfire; s++) {
+        if (abs(ildebrand[s].ildx + adjustX - mouseX) < 37.5) {
+          if (abs(ildebrand[s].ildy + adjustY - mouseY) < 37.5) {
+            ildebrand[s].ildx = 9999;
+
+
+           
+          }
+        }
+      }
+    }
   }
   println(tool);
   println(charge);
