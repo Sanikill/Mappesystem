@@ -47,8 +47,12 @@ void mouseReleased() {
     if (tool == "CHARACTER") {
       temp1 = mouseX;
       temp2 = mouseY;
-      chooseCharactSymbol = true;
-    } 
+      //chooseCharactSymbol = true;
+      Chara[yaydeath] = new Charact(temp1, temp2, 0);
+      yaydeath++;
+      temp1 = 0;
+      temp2 = 0;
+    }
     if (tool == "MOVE") { //Sebastian
       for (int i = 0; i < yaydeath; i++) {
         if (abs(Chara[i].posx+adjustX-mouseX) < 10) {
@@ -59,7 +63,7 @@ void mouseReleased() {
         }
       }
     }
-    
+
     if (tool == "ROOM") {
       if (punkt1 > 0) {
         punkt3 = mouseX;
@@ -84,7 +88,7 @@ void mouseReleased() {
    if (tool == "DOOR") { Anton
      
      }*/
-     
+
     if (tool == "FIRE") {
 
       ildebrand[yayfire] = new ild();

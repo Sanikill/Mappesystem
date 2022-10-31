@@ -6,8 +6,8 @@ public class Charact {
   private int status;
 
   Charact(int posX, int posY, int type) {
-    this.posx = posX;
-    this.posy = posY;
+    this.posx = posX - adjustX;
+    this.posy = posY - adjustY;
     this.symbol = type;
   }
 }
