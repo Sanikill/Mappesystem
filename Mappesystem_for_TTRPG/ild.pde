@@ -4,7 +4,7 @@ public class ild {
 
 
   ild() {
-    this.ildx = mouseX;
-    this.ildy = mouseY;
+    this.ildx = mouseX-adjustX;
+    this.ildy = mouseY-adjustY;
   }
 }

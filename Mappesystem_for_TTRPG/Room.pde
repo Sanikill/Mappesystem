@@ -6,9 +6,9 @@ public class Room {
 
 
   Room() {
-    this.Room1 = punkt1;
-    this.Room2 = punkt2;
-    this.Room3 = punkt3;
-    this.Room4 = punkt4;
+    this.Room1 = punkt1-adjustX;
+    this.Room2 = punkt2-adjustY;
+    this.Room3 = punkt3-adjustX;
+    this.Room4 = punkt4-adjustY;
   }
 }

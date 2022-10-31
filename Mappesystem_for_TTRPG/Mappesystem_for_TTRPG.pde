@@ -6,7 +6,7 @@ int adjustY = 0;
 int temp1 = 0;
 int temp2 = 0;
 int temp3 = 0;
-boolean chooseCharacterSymbol = false;
+boolean chooseCharactSymbol = false;
 
 void setup() {// SETUP
   size(1920, 1080);
@@ -17,7 +17,7 @@ void draw() {// LOOP
   fill(#FFFFFF);
   rect(0, 0, 10000, 10000);
 
-  if (chooseCharacterSymbol) {
+  if (chooseCharactSymbol) {
     fill(#FF0000);
     clickbox_display(10, 10+60*0, 50, 50);// Do we want a symbol, or text, or anything for these?
     clickbox_display(10, 10+60*1, 50, 50);
