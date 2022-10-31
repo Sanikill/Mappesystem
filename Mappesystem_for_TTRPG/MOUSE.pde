@@ -4,6 +4,7 @@ ild[] ildebrand = new ild[100];
 int yaydeath = 0;
 int yayroom = 0;
 int yayfire = 0;
+int yaydoor = 0;
 int charge = -1;
 int punkt1 = 0;
 int punkt2 = 0;
