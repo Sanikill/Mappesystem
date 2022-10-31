@@ -10,8 +10,13 @@ int permFORCHARACTERUSEONLYDONUTUSE = 0;
 boolean chooseCharacterSymbol = false;
 
 void setup() {// SETUP
+<<<<<<< HEAD
   size(1920, 1080); 
   ArrayList<Character> CharaList = new ArrayList<Character>();
+=======
+ size(1920,1080); 
+ rectMode(CORNERS);
+>>>>>>> 108551af831608d6fbad2ddb474f1e0dfde09ac7
 }
 
 void draw() {// LOOP
