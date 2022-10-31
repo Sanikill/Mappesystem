@@ -86,8 +86,8 @@ void mouseReleased() {
         punkt3 = 0;
         punkt4 = 0;
       }
-    }/*
-    if (tool == "DOOR") { //Anton
+    }
+    if (tool == "DOOR") { 
      if (punkt1 > 0) {
      punkt3 = mouseX;
      }
@@ -108,7 +108,7 @@ void mouseReleased() {
      punkt4 = 0;
      }
      }
-     */
+    
     if (tool == "FIRE") {
 
       ildebrand[yayfire] = new ild();
