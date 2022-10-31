@@ -14,14 +14,14 @@ void mouseReleased() {
     //BUTTONNNNSSSS
     clickboxCharact(10, 10+60*0, 50, 50, 1);
     clickboxCharact(10, 10+60*1, 50, 50, 2);
-    clickboxCharact(10, 10+60*2, 50, 50, 3);
-    clickboxCharact(10, 10+60*3, 50, 50, 4);
-    clickboxCharact(10, 10+60*4, 50, 50, 5);
-    clickboxCharact(10, 10+60*5, 50, 50, 6);
-    clickboxCharact(10, 10+60*6, 50, 50, 7);
-    clickboxCharact(10, 10+60*7, 50, 50, 8);
-    clickboxCharact(10, 10+60*8, 50, 50, 9);
-    clickboxCharact(10, 10+60*9, 50, 50, 10);
+    //clickboxCharact(10, 10+60*2, 50, 50, 3);
+    clickboxCharact(10, 10+60*2, 50, 50, 4);
+    //clickboxCharact(10, 10+60*4, 50, 50, 5);
+    clickboxCharact(10, 10+60*3, 50, 50, 6);
+    clickboxCharact(10, 10+60*4, 50, 50, 7);
+    //clickboxCharact(10, 10+60*7, 50, 50, 8);
+    clickboxCharact(10, 10+60*5, 50, 50, 9);
+    clickboxCharact(10, 10+60*6, 50, 50, 10);
     Chara[yaydeath] = new Charact(temp1,temp2,temp3);
     yaydeath++;
     temp1 = 0;
@@ -31,14 +31,14 @@ void mouseReleased() {
   } else if (mouseX < 70) {
     clickbox(10, 10+60*0, 50, 50, "DRAG");
     clickbox(10, 10+60*1, 50, 50, "CHARACTER");
-    clickbox(10, 10+60*2, 50, 50, "EDIT");
-    clickbox(10, 10+60*3, 50, 50, "MOVE");
-    clickbox(10, 10+60*4, 50, 50, "INTERACT");//EHH
-    clickbox(10, 10+60*5, 50, 50, "ROOM");
-    clickbox(10, 10+60*6, 50, 50, "DOOR");
-    clickbox(10, 10+60*7, 50, 50, "WINDOW");
-    clickbox(10, 10+60*8, 50, 50, "FIRE");
-    clickbox(10, 10+60*9, 50, 50, "DELETE");
+    //clickbox(10, 10+60*2, 50, 50, "EDIT");
+    clickbox(10, 10+60*2, 50, 50, "MOVE");
+    //clickbox(10, 10+60*4, 50, 50, "INTERACT");//EHH
+    clickbox(10, 10+60*3, 50, 50, "ROOM");
+    clickbox(10, 10+60*4, 50, 50, "DOOR");
+    //clickbox(10, 10+60*7, 50, 50, "WINDOW");
+    clickbox(10, 10+60*5, 50, 50, "FIRE");
+    clickbox(10, 10+60*6, 50, 50, "DELETE");
   } else {
    if (tool == "DRAG") {
      adjustX = adjustX - mouseX + width/2;
