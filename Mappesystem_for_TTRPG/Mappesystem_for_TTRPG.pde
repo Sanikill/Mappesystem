@@ -21,8 +21,10 @@ void draw() {// LOOP
   rect(0, 0, 10000, 10000);
 
  fill(#FFA500, 125);
+ noStoke();
  for (int i = 0; i < yayfire; i++) {
     ellipse(ildebrand[i].ildx, ildebrand[i].ildy, 75, 75);
+    stroke();
 
   fill(#000000);
   clickbox_display(10, 10+60*0, 50, 50);// Do we want a symbol, or text, or anything for these?
