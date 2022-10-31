@@ -136,5 +136,5 @@ void mouseReleased() {
   }
   println(tool);
   println(adjustX);
-  println(adjustY);
+  println(adjustY); 
 }
