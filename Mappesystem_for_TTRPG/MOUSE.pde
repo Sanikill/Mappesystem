@@ -29,7 +29,7 @@ void mouseReleased() {
     temp3 = 0;
     chooseCharactSymbol = false;
   } else if (charge > -1) {
-    
+
     charge = -1;
   } else if (mouseX < 70) {
     clickbox(10, 10+60*0, 50, 50, "DRAG");
@@ -66,7 +66,6 @@ void mouseReleased() {
         }
       }
     }
-
     if (tool == "ROOM") {
       if (punkt1 > 0) {
         punkt3 = mouseX;
@@ -88,10 +87,28 @@ void mouseReleased() {
         punkt4 = 0;
       }
     }/*
-   if (tool == "DOOR") { Anton
+    if (tool == "DOOR") { //Anton
+     if (punkt1 > 0) {
+     punkt3 = mouseX;
+     }
+     if (punkt2 > 0) {
+     punkt4 = mouseY;
      
-     }*/
-
+     house[yaydoor] = new Door();
+     yaydoor++;
+     }
+     punkt1 = mouseX;
+     punkt2 = mouseY;
+     
+     if (punkt4 > 0) {
+     
+     punkt1 = 0;
+     punkt2 = 0;
+     punkt3 = 0;
+     punkt4 = 0;
+     }
+     }
+     */
     if (tool == "FIRE") {
 
       ildebrand[yayfire] = new ild();
