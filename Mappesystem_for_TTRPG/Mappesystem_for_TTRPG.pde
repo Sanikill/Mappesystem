@@ -51,8 +51,11 @@ void draw() {// LOOP
     }
     if (charge > 0) {
       fill(#000000, 10);
-      Chara[charge].posx = mouseX+adjustX;
-      Chara[charge].posy = mouseY+adjustY;
+      rect(0,0,10000,10000);
+      Chara[charge].posx = mouseX-adjustX;
+      Chara[charge].posy = mouseY-adjustY;
+      fill(#FF0505);
+      ellipse(Chara[charge].posx+adjustX, Chara[charge].posy+adjustY, 20, 20);
     }
   }
 }

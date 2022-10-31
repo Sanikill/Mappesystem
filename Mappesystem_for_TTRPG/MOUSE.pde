@@ -4,7 +4,7 @@ ild[] ildebrand = new ild[100];
 int yaydeath = 0;
 int yayroom = 0;
 int yayfire = 0;
-int charge = 0;
+int charge = -1;
 int punkt1 = 0;
 int punkt2 = 0;
 int punkt3 = 0;
@@ -28,6 +28,9 @@ void mouseReleased() {
     temp2 = 0;
     temp3 = 0;
     chooseCharactSymbol = false;
+  } else if (charge > -1) {
+    
+    charge = -1;
   } else if (mouseX < 70) {
     clickbox(10, 10+60*0, 50, 50, "DRAG");
     clickbox(10, 10+60*1, 50, 50, "CHARACTER");
@@ -100,6 +103,5 @@ void mouseReleased() {
      }*/
   }
   println(tool);
-  println(adjustX);
-  println(adjustY);
+  println(charge);
 }
