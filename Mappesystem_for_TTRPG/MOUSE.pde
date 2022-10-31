@@ -1,3 +1,5 @@
+ild[] ildebrand = new ild[100];
+int yayfire = 0;
 int punkt1 = 0;
 int punkt2 = 0;
 int punkt3 = 0;
@@ -76,10 +78,14 @@ void mouseReleased() {
    }
    if (tool == "WINDOW") {
      
-   }
+   }*/
    if (tool == "FIRE") {
-     
+   
+  ildebrand[yayfire] = new ild();
+  yayfire++;
+ 
    }
+   /*
    if (tool == "DELETE") {
      
    }*/
