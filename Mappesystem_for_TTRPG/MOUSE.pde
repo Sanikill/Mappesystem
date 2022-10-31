@@ -1,9 +1,14 @@
+Character[] Chara = new Character[100];
+Room[] house = new Room[100];
 ild[] ildebrand = new ild[100];
+int yaydeath = 0;
+int yayroom = 0;
 int yayfire = 0;
 int punkt1 = 0;
 int punkt2 = 0;
 int punkt3 = 0;
 int punkt4 = 0;
+
 void mouseReleased() {
   if (chooseCharacterSymbol) {
     //BUTTONNNNSSSS
@@ -17,8 +22,8 @@ void mouseReleased() {
     clickboxCharacter(10, 10+60*7, 50, 50, 8);
     clickboxCharacter(10, 10+60*8, 50, 50, 9);
     clickboxCharacter(10, 10+60*9, 50, 50, 10);
-    Chara[plsnosteal] = new Character(temp1,temp2,temp3);
-    plsnosteal++;
+    Chara[yaydeath+1] = new Character(temp1,temp2,temp3);
+    yaydeath++;
     temp1 = 0;
     temp2 = 0;
     temp3 = 0;
@@ -52,7 +57,7 @@ void mouseReleased() {
    }
    if (tool == "INTERACT") {
      
-   }
+   }*/
    if (tool == "ROOM") {
       if (punkt1 > 0) {
     punkt3 = mouseX;
@@ -60,7 +65,8 @@ void mouseReleased() {
   if (punkt2 > 0) {
     punkt4 = mouseY;
 
-    rect(punkt1, punkt2, punkt3, punkt4);
+    house[yayroom] = new Room ();
+    yayroom++;
   
   }
   punkt1 = mouseX;
@@ -73,7 +79,7 @@ void mouseReleased() {
     punkt3 = 0;
     punkt4 = 0;
   }
-   }
+   }/*
    if (tool == "DOOR") {
      
    }
