@@ -114,6 +114,7 @@ void mouseReleased() {
       ildebrand[yayfire] = new ild();
       yayfire++;
     }
+<<<<<<< HEAD
 
     if (tool == "DELETE") {
 
@@ -128,6 +129,14 @@ void mouseReleased() {
         }
       }
     }
+=======
+  
+   if (tool == "DELETE") { 
+    for (int s = 0; s < yayfire; s++) {
+        if (abs(ildebrand[s].ildx + adjustX - mouseX) < 37.5) {
+          if (abs(ildebrand[s].ildy + adjustY - mouseY) < 37.5) {
+            ildebrand[s].ildx = 9999;
+>>>>>>> 42b20dcf5e1279b9c82bb414e2973461f2f97446
   }
   println(tool);
   println(charge);
