@@ -51,5 +51,10 @@ void draw() {// LOOP
     if (tool == "DRAG") {
       line(width/2, height/2, mouseX, mouseY);
     }
+    if (charge > 0) {
+      fill(#000000, 10);
+      Chara[charge].posx = mouseX+adjustX;
+      Chara[charge].posy = mouseY+adjustY;
+    }
   }
 }

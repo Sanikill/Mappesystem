@@ -31,7 +31,7 @@ void clickboxCharact (int x, int y, int breadth, int tallness, int change) {
 void drawAll() {
   for (int i = 0; i < yaydeath; i++) {
     fill(#FF0505);
-    ellipse(Chara[i].posx-10+adjustX, Chara[i].posy-10+adjustY, 20, 20);
+    ellipse(Chara[i].posx+adjustX, Chara[i].posy+adjustY, 20, 20);
   }
 
   fill(#FFFFFF, 0);
