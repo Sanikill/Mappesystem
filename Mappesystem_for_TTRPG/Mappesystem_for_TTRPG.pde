@@ -65,15 +65,15 @@ void draw() {// LOOP
     noStroke();
 
     fill(#000000);
-    clickbox_display(10, 10+60*0, 50, 50);// Do we want a symbol, or text, or anything for these?
-    clickbox_display(10, 10+60*1, 50, 50);
-    //clickbox_display(10, 10+60*2, 50, 50);
-    clickbox_display(10, 10+60*2, 50, 50);
-    //clickbox_display(10, 10+60*4, 50, 50);
-    clickbox_display(10, 10+60*3, 50, 50);
-    clickbox_display(10, 10+60*4, 50, 50);
-    //clickbox_display(10, 10+60*7, 50, 50);
-    clickbox_display(10, 10+60*5, 50, 50);
-    clickbox_display(10, 10+60*6, 50, 50);
+    clickbox_display(10, 10+60*0, 50, 50, "DRAG");
+    clickbox_display(10, 10+60*1, 50, 50, "CHARECTER");
+    //clickbox_display(10, 10+60*2, 50, 50, "EDIT");
+    clickbox_display(10, 10+60*2, 50, 50, "MOVE");
+    //clickbox_display(10, 10+60*4, 50, 50, "INTERACT");
+    clickbox_display(10, 10+60*3, 50, 50, "ROOM");
+    clickbox_display(10, 10+60*4, 50, 50, "DOOR");
+    //clickbox_display(10, 10+60*7, 50, 50, "WINDOW");
+    clickbox_display(10, 10+60*5, 50, 50, "FIRE");
+    clickbox_display(10, 10+60*6, 50, 50, "DELETE");
   }
 }
