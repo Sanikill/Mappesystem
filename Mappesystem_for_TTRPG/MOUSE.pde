@@ -18,24 +18,19 @@ int point4 = 0;
 
 void mouseReleased() {
   if (chooseCharactSymbol) {
-    clickboxCharact(10, 10+60*0, 50, 50, 1);
-    clickboxCharact(10, 10+60*1, 50, 50, 2);
-    clickboxCharact(10, 10+60*2, 50, 50, 3);
-    clickboxCharact(10, 10+60*3, 50, 50, 4);
-    clickboxCharact(10, 10+60*4, 50, 50, 5);
-    clickboxCharact(10, 10+60*5, 50, 50, 6);
-    clickboxCharact(10, 10+60*6, 50, 50, 7);
-    clickboxCharact(10, 10+60*7, 50, 50, 8);
-    clickboxCharact(10, 10+60*8, 50, 50, 9);
-    clickboxCharact(10, 10+60*9, 50, 50, 10);
-    Chara[yaydeath] = new Charact(temp1, temp2, temp3);
+    clickboxCharact(10, 10+60*0, 50, 50, badG);
+    clickboxCharact(10, 10+60*1, 50, 50, badB);
+    clickboxCharact(10, 10+60*2, 50, 50, goodMage);
+    clickboxCharact(10, 10+60*3, 50, 50, goodRogue);
+    clickboxCharact(10, 10+60*4, 50, 50, goodKnight);
+    clickboxCharact(10, 10+60*5, 50, 50, goodPala);
+    clickboxCharact(10, 10+60*6, 50, 50, NPC);
+    Chara[yaydeath] = new Charact(temp1, temp2, tempPic);
     yaydeath++;
     temp1 = 0;
     temp2 = 0;
-    temp3 = 0;
     chooseCharactSymbol = false;
   } else if (charge > -1) {
-
     charge = -1;
   } else if (mouseX < 70) {
     clickbox(10, 10+60*0, 50, 50, "DRAG");
@@ -56,13 +51,9 @@ void mouseReleased() {
     if (tool == "CHARACTER") {
       temp1 = mouseX;
       temp2 = mouseY;
-      //chooseCharactSymbol = true;
-      Chara[yaydeath] = new Charact(temp1, temp2, 0);
-      yaydeath++;
-      temp1 = 0;
-      temp2 = 0;
+      chooseCharactSymbol = true;
     }
-    if (tool == "MOVE") { //Sebastian
+    if (tool == "MOVE") {
       for (int i = 0; i < yaydeath; i++) {
         if (abs(Chara[i].posx+adjustX-mouseX) < 10) {
           if (abs(Chara[i].posy+adjustY-mouseY) < 10) {

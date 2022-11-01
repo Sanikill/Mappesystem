@@ -16,12 +16,12 @@ void clickbox (int x, int y, int breadth, int tallness, String change) {
   }
 }// Clickbox function
 
-void clickboxCharact (int x, int y, int breadth, int tallness, int change) {
+void clickboxCharact (int x, int y, int breadth, int tallness, PImage change) {
   if (mouseY >= y) {
     if (mouseX >= x) {
       if (mouseY <= y+tallness) {
         if (mouseX <= x+breadth) {
-          temp3 = change;
+          tempPic = change;
         }
       }
     }
@@ -31,7 +31,7 @@ void clickboxCharact (int x, int y, int breadth, int tallness, int change) {
 void drawAll() {
   for (int i = 0; i < yaydeath; i++) {
     fill(#FF0505);
-    ellipse(Chara[i].posx+adjustX, Chara[i].posy+adjustY, 20, 20);
+    image(Chara[i].symbol, Chara[i].posx+adjustX, Chara[i].posy+adjustY, 40, 40);
   }
 
   fill(#FFFFFF, 0);
