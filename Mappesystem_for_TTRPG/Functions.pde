@@ -31,7 +31,7 @@ void clickboxCharact (int x, int y, int breadth, int tallness, PImage change) {
 void drawAll() {
   for (int i = 0; i < yaydeath; i++) {
     fill(#FF0505);
-    image(Chara[i].symbol, Chara[i].posx+adjustX, Chara[i].posy+adjustY, 40, 40);
+    image(Chara[i].symbol, Chara[i].posx+adjustX-20, Chara[i].posy+adjustY-20, 40, 40);
   }
 
   fill(#FFFFFF,0);
@@ -46,4 +46,14 @@ void drawAll() {
     ellipse(ildebrand[i].ildx+adjustX, ildebrand[i].ildy+adjustY, 75, 75);
   }
   stroke(#000000);
+  
+  for (int i = 0; i < yaydoor; i++) {
+    if (revolving[i].vertical) {
+      line(revolving[i].Doorx-10,revolving[i].Doory+20,revolving[i].Doorx+10,revolving[i].Doory+20);
+      line(revolving[i].Doorx-10,revolving[i].Doory-20,revolving[i].Doorx+10,revolving[i].Doory-20);
+    } else {
+      line(revolving[i].Doorx-20,revolving[i].Doory+10,revolving[i].Doorx-20,revolving[i].Doory-10);
+      line(revolving[i].Doorx+20,revolving[i].Doory+10,revolving[i].Doorx+20,revolving[i].Doory-10);
+    }
+  }
 }

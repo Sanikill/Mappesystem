@@ -11,10 +11,6 @@ int punkt1 = 0;
 int punkt2 = 0;
 int punkt3 = 0;
 int punkt4 = 0;
-int point1 = 0;
-int point2 = 0;
-int point3 = 0;
-int point4 = 0;
 
 void mouseReleased() {
   if (chooseCharactSymbol) {
@@ -83,25 +79,8 @@ void mouseReleased() {
       }
     }
     if (tool == "DOOR") { //Anton
-      if (point1 > 0) {
-        point3 = mouseX;
-      }
-      if (point2 > 0) {
-        point4 = mouseY;
-
-        revolving[yaydoor] = new Door();
-        yaydoor++;
-      }
-      point1 = mouseX;
-      point2 = mouseY;
-
-      if (point4 > 0) {
-
-        point1 = 0;
-        point2 = 0;
-        point3 = 0;
-        point4 = 0;
-      }
+      revolving[yaydoor] = new Door();
+      yaydoor++;
     }
 
     if (tool == "FIRE") {
@@ -114,7 +93,7 @@ void mouseReleased() {
       for (int s = 0; s < yayfire; s++) {
         if (abs(ildebrand[s].ildx + adjustX - mouseX) < 37.5) {
           if (abs(ildebrand[s].ildy + adjustY - mouseY) < 37.5) {
-            ildebrand[s].ildx = 9999;
+            ildebrand[s].ildx = 99999;
           }
         }
       }
