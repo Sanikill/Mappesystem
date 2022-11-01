@@ -1,14 +1,20 @@
 Charact[] Chara = new Charact[100];
 Room[] house = new Room[100];
+Door[] revolving = new Door[100];
 ild[] ildebrand = new ild[100];
 int yaydeath = 0;
 int yayroom = 0;
+int yaydoor = 0;
 int yayfire = 0;
 int charge = -1;
 int punkt1 = 0;
 int punkt2 = 0;
 int punkt3 = 0;
 int punkt4 = 0;
+int point1 = 0;
+int point2 = 0;
+int point3 = 0;
+int point4 = 0;
 
 void mouseReleased() {
   if (chooseCharactSymbol) {
@@ -73,7 +79,7 @@ void mouseReleased() {
       if (punkt2 > 0) {
         punkt4 = mouseY;
 
-        house[yayroom] = new Room ();
+        house[yayroom] = new Room();
         yayroom++;
       }
       punkt1 = mouseX;
@@ -88,56 +94,43 @@ void mouseReleased() {
       }
     }
     if (tool == "DOOR") { //Anton
-     if (punkt1 > 0) {
-     punkt3 = mouseX;
-     }
-     if (punkt2 > 0) {
-     punkt4 = mouseY;
-     
-     house[yaydoor] = new Door();
-     yaydoor++;
-     }
-     punkt1 = mouseX;
-     punkt2 = mouseY;
-     
-     if (punkt4 > 0) {
-     
-     punkt1 = 0;
-     punkt2 = 0;
-     punkt3 = 0;
-     punkt4 = 0;
-     }
-     }
-     
+      if (point1 > 0) {
+        point3 = mouseX;
+      }
+      if (point2 > 0) {
+        point4 = mouseY;
+
+        revolving[yaydoor] = new Door();
+        yaydoor++;
+      }
+      point1 = mouseX;
+      point2 = mouseY;
+
+      if (point4 > 0) {
+
+        point1 = 0;
+        point2 = 0;
+        point3 = 0;
+        point4 = 0;
+      }
+    }
+
     if (tool == "FIRE") {
 
       ildebrand[yayfire] = new ild();
       yayfire++;
     }
-<<<<<<< HEAD
 
-    if (tool == "DELETE") {
-
+    if (tool == "DELETE") { 
       for (int s = 0; s < yayfire; s++) {
         if (abs(ildebrand[s].ildx + adjustX - mouseX) < 37.5) {
           if (abs(ildebrand[s].ildy + adjustY - mouseY) < 37.5) {
             ildebrand[s].ildx = 9999;
-
-
-           
           }
         }
       }
     }
-=======
-  
-   if (tool == "DELETE") { 
-    for (int s = 0; s < yayfire; s++) {
-        if (abs(ildebrand[s].ildx + adjustX - mouseX) < 37.5) {
-          if (abs(ildebrand[s].ildy + adjustY - mouseY) < 37.5) {
-            ildebrand[s].ildx = 9999;
->>>>>>> 42b20dcf5e1279b9c82bb414e2973461f2f97446
+    println(tool);
+    println(charge);
   }
-  println(tool);
-  println(charge);
 }
