@@ -49,11 +49,11 @@ void drawAll() {
   
   for (int i = 0; i < yaydoor; i++) {
     if (revolving[i].vertical) {
-      line(revolving[i].Doorx-10,revolving[i].Doory+20,revolving[i].Doorx+10,revolving[i].Doory+20);
-      line(revolving[i].Doorx-10,revolving[i].Doory-20,revolving[i].Doorx+10,revolving[i].Doory-20);
+      line(revolving[i].Doorx-10+adjustX,revolving[i].Doory+20+adjustY,revolving[i].Doorx+10+adjustX,revolving[i].Doory+20+adjustY);
+      line(revolving[i].Doorx-10+adjustX,revolving[i].Doory-20+adjustY,revolving[i].Doorx+10+adjustX,revolving[i].Doory-20+adjustY);
     } else {
-      line(revolving[i].Doorx-20,revolving[i].Doory+10,revolving[i].Doorx-20,revolving[i].Doory-10);
-      line(revolving[i].Doorx+20,revolving[i].Doory+10,revolving[i].Doorx+20,revolving[i].Doory-10);
+      line(revolving[i].Doorx-20+adjustX,revolving[i].Doory+10+adjustY,revolving[i].Doorx-20+adjustX,revolving[i].Doory-10+adjustY);
+      line(revolving[i].Doorx+20+adjustX,revolving[i].Doory+10+adjustY,revolving[i].Doorx+20+adjustX,revolving[i].Doory-10+adjustY);
     }
   }
 }
