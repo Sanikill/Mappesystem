@@ -34,7 +34,8 @@ void drawAll() {
     image(Chara[i].symbol, Chara[i].posx+adjustX, Chara[i].posy+adjustY, 40, 40);
   }
 
-  fill(#FFFFFF, 0);
+  fill(#FFFFFF);
+  stroke(#000000);
   for (int i = 0; i < yayroom; i++) {
     rect(house[i].Room1+adjustX, house[i].Room2+adjustY, house[i].Room3+adjustX, house[i].Room4+adjustY);
   }
