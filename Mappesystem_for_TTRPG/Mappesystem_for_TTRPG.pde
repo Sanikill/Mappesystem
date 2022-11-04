@@ -64,8 +64,10 @@ void draw() {// LOOP
     rect(-1, -1, 70, 10000);
     noStroke();
 
+  
+
     fill(#000000);
-    clickbox_display(10, 10+60*0, 50, 50);// Do we want a symbol, or text, or anything for these?
+    clickbox_display(10, 10+60*0, 50, 50);
     clickbox_display(10, 10+60*1, 50, 50);
     //clickbox_display(10, 10+60*2, 50, 50);
     clickbox_display(10, 10+60*2, 50, 50);
@@ -75,5 +77,15 @@ void draw() {// LOOP
     //clickbox_display(10, 10+60*7, 50, 50);
     clickbox_display(10, 10+60*5, 50, 50);
     clickbox_display(10, 10+60*6, 50, 50);
+    
+    fill(#FFA500);
+  textSize(15);
+  text("scroll", 17.5,40+60*0); 
+   text("npc", 17.50, 40+60*1); 
+    text("move", 17.50, 40+60*2); 
+     text("room", 17.50, 40+60*3); 
+      text("door", 20, 40+60*4); 
+       text("fire", 15, 40+60*5); 
+         text("blow", 15, 40+60*6);
   }
 }
