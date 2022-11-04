@@ -16,11 +16,12 @@ void mouseReleased() {
   if (chooseCharactSymbol) {
     clickboxCharact(10, 10+60*0, 50, 50, badG);
     clickboxCharact(10, 10+60*1, 50, 50, badB);
-    clickboxCharact(10, 10+60*2, 50, 50, goodMage);
-    clickboxCharact(10, 10+60*3, 50, 50, goodRogue);
-    clickboxCharact(10, 10+60*4, 50, 50, goodKnight);
-    clickboxCharact(10, 10+60*5, 50, 50, goodPala);
-    clickboxCharact(10, 10+60*6, 50, 50, NPC);
+    clickboxCharact(10, 10+60*2, 50, 50, Maria);
+    clickboxCharact(10, 10+60*3, 50, 50, Justin);
+    clickboxCharact(10, 10+60*4, 50, 50, Gerhardt);
+    clickboxCharact(10, 10+60*5, 50, 50, Ragnar);
+    clickboxCharact(10, 10+60*6, 50, 50, Sara);
+    clickboxCharact(10, 10+60*7, 50, 50, NPC);
     Chara[yaydeath] = new Charact(temp1, temp2, tempPic);
     yaydeath++;
     temp1 = 0;

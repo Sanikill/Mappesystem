@@ -10,10 +10,11 @@ PImage tempPic;
 boolean chooseCharactSymbol = false;
 PImage badG;
 PImage badB;
-PImage goodMage;
-PImage goodRogue;
-PImage goodKnight;
-PImage goodPala;
+PImage Maria;
+PImage Justin;
+PImage Gerhardt;
+PImage Ragnar;
+PImage Sara;
 PImage NPC;
 
 void setup() {// SETUP
@@ -22,10 +23,11 @@ void setup() {// SETUP
 
   badG = loadImage("PNG prog/Bad grunt.png");
   badB = loadImage("PNG prog/BIG boss.png");
-  goodMage = loadImage("PNG prog/hero mage.png");
-  goodRogue = loadImage("PNG prog/hero rouge.png");
-  goodKnight = loadImage("PNG prog/hero knight.png");
-  goodPala = loadImage("PNG prog/Hero paladin.png");
+  Maria = loadImage("HERO/Maria.png");
+  Justin = loadImage("HERO/Justin.png");
+  Gerhardt = loadImage("HERO/Gerhardt.png");
+  Ragnar = loadImage("HERO/Ragnar.png");
+  Sara = loadImage("HERO/Sara.png");
   NPC = loadImage("PNG prog/NPC.png");
 }
 
@@ -36,11 +38,12 @@ void draw() {// LOOP
   if (chooseCharactSymbol) {
     image(badG, 10, 10+60*0, 50, 50);
     image(badB, 10, 10+60*1, 50, 50);
-    image(goodMage, 10, 10+60*2, 50, 50);
-    image(goodRogue, 10, 10+60*3, 50, 50);
-    image(goodKnight, 10, 10+60*4, 50, 50);
-    image(goodPala, 10, 10+60*5, 50, 50);
-    image(NPC, 10, 10+60*6, 50, 50);
+    image(Maria, 10, 10+60*2, 50, 50);
+    image(Justin, 10, 10+60*3, 50, 50);
+    image(Gerhardt, 10, 10+60*4, 50, 50);
+    image(Ragnar, 10, 10+60*5, 50, 50);
+    image(Sara, 10, 10+60*6, 50, 50);
+    image(NPC, 10, 10+60*7, 50, 50);
   } else {
 
     drawAll();
@@ -64,7 +67,7 @@ void draw() {// LOOP
     rect(-1, -1, 70, 10000);
     noStroke();
 
-  
+
 
     fill(#000000);
     clickbox_display(10, 10+60*0, 50, 50);
@@ -77,15 +80,15 @@ void draw() {// LOOP
     //clickbox_display(10, 10+60*7, 50, 50);
     clickbox_display(10, 10+60*5, 50, 50);
     clickbox_display(10, 10+60*6, 50, 50);
-    
+
     fill(#FFA500);
-  textSize(15);
-  text("scroll", 17.5,40+60*0); 
-   text("npc", 17.50, 40+60*1); 
-    text("move", 17.50, 40+60*2); 
-     text("room", 17.50, 40+60*3); 
-      text("door", 20, 40+60*4); 
-       text("fire", 15, 40+60*5); 
-         text("blow", 15, 40+60*6);
+    textSize(15);
+    text("Camera", 15, 40+60*0); 
+    text("Create", 15, 40+60*1); 
+    text("Move", 17.50, 40+60*2); 
+    text("Room", 17.50, 40+60*3); 
+    text("Door", 20, 40+60*4); 
+    text("Fire", 15, 40+60*5); 
+    text("Del", 15, 40+60*6);
   }
 }
